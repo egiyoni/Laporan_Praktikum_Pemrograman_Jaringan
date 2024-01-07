@@ -1,0 +1,34 @@
+CTYPE html>
+<html>
+  <head>
+    <title>Berita</title>
+    <link rel="icon" href="/img/robot.jpg" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+      <div class="main-content">
+      {{>header}}
+      <img class="portrait" src="/img/robot.jpg" alt="author">
+    </div>
+    {{>footer}}
+  </body>
+  <body>
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Cari berita...">
+        <button id="search-button">Cari</button>
+    </div>
+    <div class="news-grid" id="news-container">
+        <!-- Hasil berita akan ditampilkan di sini -->
+    </div>
+    <script src="api.js"></script>
+</body>
+      <!-- footer -->
+  <footer>
+      <div class="container">
+          <small>Egi Yoni Sandra</small>
+      </div>
+      
+  </footer>
+  
+</body>
+</html>

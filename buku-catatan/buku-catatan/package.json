@@ -1,0 +1,19 @@
+{
+  "name": "buku-catatan",
+  "version": "1.0.0",
+  "main": "apps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/validator": "^13.11.1",
+    "chalk": "^4.1.2",
+    "nodemon": "^3.0.1",
+    "validator": "^13.11.0",
+    "validator.js": "^2.0.4",
+    "yargs": "^17.7.2"
+  },
+  "description": ""
+}

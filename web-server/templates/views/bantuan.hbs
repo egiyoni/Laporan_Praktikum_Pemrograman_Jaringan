@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Bantuan</title>
+    <link rel="icon" href="/img/cuaca.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js"></script>
+    <style>
+        .main-content {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h1>Selamat datang di Halaman Bantuan</h1>
+        <h2>Apa tujuan halaman ini?</h2>
+        <p>Halaman Bantuan ini bertujuan untuk memberikan informasi yang berguna tentang aplikasi kami. Kami berharap Anda akan menemukan jawaban atas pertanyaan umum yang mungkin Anda miliki.</p>
+
+        <table>
+            <tr>
+                <th>Pertanyaan</th>
+                <th>Jawaban</th>
+            </tr>
+            <tr>
+                <td>Apa itu API?</td>
+                <td>API (Application Programming Interface) adalah kumpulan aturan dan protokol yang memungkinkan berbagai perangkat lunak untuk berinteraksi satu sama lain. Ini memungkinkan aplikasi kami untuk berkomunikasi dengan layanan lain dan mengambil data yang diperlukan untuk memberikan informasi cuaca yang akurat kepada Anda.</td>
+            </tr>
+            <tr>
+                <td>API apa yang digunakan dalam aplikasi ini?</td>
+                <td>Kami menggunakan API cuaca dari layanan pihak ketiga untuk memberikan informasi cuaca terbaru kepada Anda. Data cuaca ini diperoleh dari penyedia cuaca profesional dan diintegrasikan ke dalam aplikasi kami.</td>
+            </tr>
+            <tr>
+                <td>Salah satu pola arsitektur API adalah RESTful. Jelaskan.</td>
+                <td>RESTful (Representational State Transfer) adalah pola arsitektur API yang berbasis pada prinsip-prinsip dasar, termasuk penggunaan metode HTTP seperti GET, POST, PUT, dan DELETE untuk mengakses dan memanipulasi sumber daya. Dalam konteks API cuaca, kami menggunakan metode GET untuk mengambil data cuaca dari server eksternal. Data cuaca ini dianggap sebagai sumber daya, dan pengguna dapat mengaksesnya dengan permintaan GET.</td>
+            </tr>
+        </table>
+    </div>
+    {{>footer}}
+</body>
+</html>
